@@ -10,15 +10,92 @@
 /* ---------- general styling ---------- */
 html {
   color: var(--text-color-dark);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100%;
   text-align: center;
   width: 100%;
   font-weight: 200;
 }
 
+p {
+  letter-spacing:
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
 body {
   margin: 0;
+}
+
+header {
+  height: 8vh;
+  z-index: 2;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 2em auto;
+  width: 100%;
+  max-width: 200px;
+}
+
+.burgermenu {
+  position: absolute;
+  left: 2%;
+  color: black;
+}
+
+.shoppingbasket {
+  position: absolute;
+  right: 2%;
+  width: 25px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F4F4F4;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+  padding-left: 10%;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -1%;
+  left: 1%;
+  font-size: 40px;
+  font-weight: 400;
 }
 
 h1 {
@@ -27,86 +104,160 @@ h1 {
   letter-spacing: 3px;
 }
 
-/* ---------- Grid container ---------- */
-.grid-container {
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-}
-
-/* ---------- topbar styling ---------- */
-.topbar {
-  background-color: var(--light-green);
-  color: var(--text-color-light);
-  padding: 13.5px;
-  text-transform: uppercase;
-}
-
-.topbar h2 {
-  margin: 0;
-  font-weight: 300;
-}
-
-/* ---------- header styling ---------- */
-header {
-  background-color: var(--green);
-}
-
-.img-col {}
-
-.img-col img {
-  max-width: 200px;
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-}
-
-.grid-container section {
-  position: relative;
-}
-
-/* ---------- tabbar styling ---------- */
-.tabbar {
-  background-color: var(--green);
-  margin: auto;
-  width: 100%;
-}
-
-/* Style the links inside the navigation bar */
-.tabbar a {
-  display: inline-block;
-  color: var(--text-color-light);
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-  font-size: 0.8em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-/* Change the color of links on hover */
-.tabbar a:hover {
-  background-color: var(--light-grey);
-  color: var(--text-color-dark);
-}
-
-/* Add a color to the active/current link */
-.tabbar a.active {
-  background-color: var(--light-green);
-  color: var(--text-color-light);
-}
-
 /* ---------- page styling ---------- */
 .page {
   display: none;
-  background: var(--light-grey);
   animation: fadeIn 0.4s;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
-/* ---------- logo styling ---------- */
-.logo {
-  margin: 2em auto;
+/* ---------- forside styling ---------- */
+#home {}
+
+.mobile-front-img {
+  width: 93%;
+}
+
+.bikemodel-slider {
+  background-color: #F4F4F4;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySlides {
+  display: none
+}
+
+.mySlides>img {
+  background-color: white;
+  width: 80%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* The dots/bullets/indicators */
+.dot-container {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.show-all-btn {
+  width: 90%;
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* ---------- cykelmodeller styling ---------- */
+#cykelmodeller, #ekstraudstyr {
+  background-color: #F4F4F4;
+}
+
+.bikes-img {
+  width: 80%;
+  background-color: white;
+}
+
+/* ---------- footer styling ---------- */
+footer {
+  height: auto;
   width: 100%;
-  max-width: 300px;
+  background: #DBDBDB;
+}
+
+footer>div {
+  margin-top: 15%;
+}
+
+footer>div>ul>li {
+  list-style-type: none;
 }
 
 /* ---------- animations ---------- */
