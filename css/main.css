@@ -116,32 +116,68 @@ h1 {
 }
 
 /* ---------- forside styling ---------- */
-#home {}
-
 .mobile-front-img {
   width: 93%;
 }
 
-.bikemodel-slider {
+.horizontal-wrapper {
+  overflow: auto;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.horizontal-wrapper>div {
+  display: inline-block;
+}
+
+/* ---------- cykelmodeller styling ---------- */
+#cykelmodeller, #ekstraudstyr {
   background-color: #F4F4F4;
-  height: 50vh;
+  padding-top: 20%;
+}
+
+.bikes-img {
+  width: 80%;
+  background-color: white;
+}
+
+/* ---------- bisou styling ---------- */
+#bisou {
+  padding-top: 20%;
+}
+
+#returnBtn {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 2%;
+  font-weight: 400;
+}
+
+.bisou-slider, .bikemodel-slider {
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10%;
 }
 
-.mySlides {
+.bikemodel-slider {
+  background-color: #f4f4f4;
+}
+
+.mySlides, .frontpageSlides {
   display: none
 }
 
-.mySlides>img {
+.mySlides>img, .frontpageSlides>img {
   background-color: white;
   width: 80%;
 }
 
 /* Slideshow container */
-.slideshow-container {
+.slideshow-container, .frontpage-slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -174,15 +210,35 @@ h1 {
 }
 
 /* The dots/bullets/indicators */
-.dot-container {
+.dot-container-mobile {
   display: inline-block;
   margin-bottom: 20px;
 }
 
+.dot-container-desktop {
+  display: none;
+}
+
+.frontpageDot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.frontpageDotActive {
+  height: 30px;
+  border-radius: 25px;
+}
+
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -191,7 +247,8 @@ h1 {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  height: 30px;
+  border-radius: 25px;
 }
 
 .show-all-btn {
@@ -207,42 +264,59 @@ h1 {
   font-weight: 400;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.blue-grey {
+  background-color: #017196;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
+.blue-jade {
+  background-color: #95c2be;
 }
 
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
+.ivory {
+  background-color: #ccb6aa;
 }
 
-/* ---------- cykelmodeller styling ---------- */
-#cykelmodeller, #ekstraudstyr {
-  background-color: #F4F4F4;
+.moss-green {
+  background-color: #485a45;
 }
 
-.bikes-img {
-  width: 80%;
+.red {
+  background-color: #fb3747;
+}
+
+.saffron {
+  background-color: #fcaf2e;
+}
+
+.vincent-blue {
+  background-color: #064363;
+}
+
+.willow {
+  background-color: #3e3a3b;
+}
+
+.bike-information {
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.add-to-basket {
   background-color: white;
+  border: 1px solid black;
+  width: 80%;
+  height: 50px;
+}
+
+.specification {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.specification>p>a {
+  color: black;
+  font-weight: 400;
 }
 
 /* ---------- footer styling ---------- */

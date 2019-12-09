@@ -44,55 +44,79 @@
     <img class="mobile-front-img" src="img/mobile-bg.png" alt="">
     <h1>OM OS</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <!--
+
+
+
     <div class="bikemodel-slider">
       <h1>CYKELMODELLER</h1>
+      <div class="frontpage-slideshow-container">
 
-      <div class="slideshow-container">
-
-        <div class="mySlides fade">
-          <img src="img/bisou.png" style="width:80%">
-        </div>
-
-        <div class="mySlides fade">
-          <img src="img/cs26.png" style="width:80%">
+        <div class="frontpageSlides">
+          <h2>BISOU</h2>
+          <img src="img/bisou-blue-grey.png" style="width:80%">
         </div>
 
-        <div class="mySlides fade">
-          <img src="img/limited.png" style="width:80%">
+        <div class="frontpageSlides">
+          <h2>CS26</h2>
+          <img src="img/cs26-moss-green.png" style="width:80%">
         </div>
 
-        <div class="mySlides fade">
-          <img src="img/little.png" style="width:80%">
-        </div>
-        <div class="mySlides fade">
-          <img src="img/minivelo.png" style="width:80%">
-        </div>
-        <div class="mySlides fade">
-          <img src="img/singlespeed.png" style="width:80%">
-        </div>
-        <div class="mySlides fade">
-          <img src="img/sport.png" style="width:80%">
+        <div class="frontpageSlides">
+          <h2>LIMITED</h2>
+          <img src="img/limited-champagne.png" style="width:80%">
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="frontpageSlides">
+          <h2>LITTLE</h2>
+          <img src="img/little-jeffer-red.png" style="width:80%">
+        </div>
+
+        <div class="frontpageSlides">
+          <h2>MINI VELO</h2>
+          <img src="img/mini-velo-matt-sage.png" style="width:80%">
+        </div>
+        <div class="frontpageSlides">
+          <h2>SINGLE SPEED</h2>
+          <img src="img/single-speed-midnight.png" style="width:80%">
+        </div>
+        <div class="frontpageSlides">
+          <h2>SPORT</h2>
+          <img src="img/sport-matt-olive.png" style="width:80%">
+        </div>
+
+
+        <a class="prev" onclick="plusFrontpageSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusFrontpageSlides(1)">&#10095;</a>
 
       </div>
 
-      <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
+      <div class="dot-container-mobile">
+        <span class="frontpageDot" onclick="currentFrontpageSlide(1)"></span>
+        <span class="frontpageDot" onclick="currentFrontpageSlide(2)"></span>
+        <span class="frontpageDot" onclick="currentFrontpageSlide(3)"></span>
+        <span class="frontpageDot" onclick="currentFrontpageSlide(4)"></span>
+        <span class="frontpageDot" onclick="currentFrontpageSlide(5)"></span>
+        <span class="frontpageDot" onclick="currentFrontpageSlide(6)"></span>
+        <span class="frontpageDot" onclick="currentFrontpageSlide(7)"></span>
       </div>
+      <div class="dot-container-desktop">
+        <span class="desktopModelsMenu" onclick="currentFrontpageSlide(1)">BISOU</span>
+        <span class="desktopModelsMenu" onclick="currentFrontpageSlide(2)">CS26</span>
+        <span class="desktopModelsMenu" onclick="currentFrontpageSlide(3)">LIMITED</span>
+        <span class="desktopModelsMenu" onclick="currentFrontpageSlide(4)">LITTLE</span>
+        <span class="desktopModelsMenu" onclick="currentFrontpageSlide(5)">MINI VELO</span>
+        <span class="desktopModelsMenu" onclick="currentFrontpageSlide(6)">SINGLE SPEED</span>
+        <span class="desktopModelsMenu" onclick="currentFrontpageSlide(7)">SPORT</span>
+      </div>
+
 
       <a class="show-all-btn" onclick="showPage('cykelmodeller')" href="#cykelmodeller">VIS ALLE MODELLER</a>
 
-    </div> -->
+    </div>
+
+
+
+
 
 
     <footer>
@@ -118,29 +142,93 @@
   <!-- about page -->
   <section id="cykelmodeller" class="page">
 
-    <div id="model-container"></div>
+    <h1>CYKELMODELLER</h1>
 
-    <footer>
-      <div>
-        <p><b>FIX & FINITO</b></p>
-        <p>SKOVVEJEN 7</p>
-        <p>8000 AARHUS C</p>
-      </div>
-      <div>
-        <p><b>ÅBNINGSTIDER</b></p>
-        <p>TIRSDAG - FREDAG: 10:00 - 17:00</p>
-        <p>LØRDAG: 11:00 - 14:00</p>
-      </div>
-      <div>
-        <p><b>KONTAKT</b></p>
-        <p>FIXFINITO@OUTLOOK.DK</p>
-        <p>+45 53 78 68 78</p>
+    <div id="modelsWrapper">
+      <div id="models"></div>
+    </div>
+  </section>
+
+  <section id="bisou" class="page">
+    <a id="returnBtn" href="#cykelmodeller" onclick="showPage('cykelmodeller')">&#8592; TILBAGE</a>
+
+    <div class="bisou-slider">
+      <h1>BISOU</h1>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides">
+          <img src="img/bisou-blue-grey.png" style="width:80%">
+        </div>
+
+        <div class="mySlides">
+          <img src="img/bisou-blue-jade.png" style="width:80%">
+        </div>
+
+        <div class="mySlides">
+          <img src="img/bisou-ivory.png" style="width:80%">
+        </div>
+
+        <div class="mySlides">
+          <img src="img/bisou-moss-green.png" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <img src="img/bisou-red.png" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <img src="img/bisou-saffron.png" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <img src="img/bisou-vincent-blue.png" style="width:80%">
+        </div>
+        <div class="mySlides">
+          <img src="img/bisou-willow.png" style="width:80%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
       </div>
 
-    </footer>
+      <div class="dot-container">
+        <span class="dot blue-grey" onclick="currentSlide(1)"></span>
+        <span class="dot blue-jade" onclick="currentSlide(2)"></span>
+        <span class="dot ivory" onclick="currentSlide(3)"></span>
+        <span class="dot moss-green" onclick="currentSlide(4)"></span>
+        <span class="dot red" onclick="currentSlide(5)"></span>
+        <span class="dot saffron" onclick="currentSlide(6)"></span>
+        <span class="dot vincent-blue" onclick="currentSlide(7)"></span>
+        <span class="dot willow" onclick="currentSlide(8)"></span>
+      </div>
+    </div>
+
+    <div class="bike-information">
+      <h1>5300 DKK</h1>
+      <button class="add-to-basket">TILFØJ TIL KURV</button>
+
+      <article class="specification">
+        <h2>SPECIFIKATIONER</h2>
+        <p>Super let bycykel med 7 gear, som gør det nemt at komme rundt selv i bakket terræn.
+          Den mest komfortable af modellerne fra tokyobike. Oprejst kørestilling for god komfort og masser af udsyn i trafikken. Fås i mange forskellige farver.
+          Monteres med kurv, originale skærme, bagagebærer og lås efter behov.</p>
+        <h2>EKSTRAUDSTYR</h2>
+        <p>Mangler du en cykelkurv, -lygter eller noget helt tredje?
+          Så hop ind på <a onclick="showPage('ekstraudstyr')" href="#ekstraudstyr">ekstraudstyr</a> og tilvælg det du mangler! </p>
+      </article>
+    </div>
 
   </section>
 
+  <section id="cs26">
+
+  </section>
+
+  <section id="little">
+
+  </section>
+
+  <section id="limited">
+
+  </section>
   <!-- clients page -->
   <section id="ekstraudstyr" class="page">
     <h1>EKSTRAUDSTYR</h1>
@@ -214,7 +302,6 @@
   </section>
 
 
-  <section id="bisou" class="page">
 
 
 

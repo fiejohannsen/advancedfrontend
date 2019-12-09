@@ -1,0 +1,44 @@
+{
+  "bikes": [
+    {
+      "bisou": {
+        "bluegrey": "https://cdn.webshopapp.com/shops/170348/files/302966061/image.jpg",
+        "bluejade": "https://cdn.webshopapp.com/shops/170348/files/302966064/image.jpg",
+        "ivory": "https://cdn.webshopapp.com/shops/170348/files/302966067/image.jpg",
+        "mossgreen": "https://cdn.webshopapp.com/shops/170348/files/302966097/image.jpg",
+        "red": "https://cdn.webshopapp.com/shops/170348/files/302966166/image.jpg",
+        "saffron": "https://cdn.webshopapp.com/shops/170348/files/302966100/image.jpg",
+        "vincentblue": "https://cdn.webshopapp.com/shops/170348/files/302966103/image.jpg",
+        "willow": "https://cdn.webshopapp.com/shops/170348/files/302966157/image.jpg"
+      },
+      "cs26": {
+        "bamboo": "https://cdn.webshopapp.com/shops/170348/files/302961216/image.jpg",
+        "beigered": "https://cdn.webshopapp.com/shops/170348/files/302968161/image.jpg",
+        "bluegrey": "https://cdn.webshopapp.com/shops/170348/files/302961405/image.jpg",
+        "ivory": "https://cdn.webshopapp.com/shops/170348/files/302961402/image.jpg",
+        "jefferred": "https://cdn.webshopapp.com/shops/170348/files/302968164/image.jpg",
+        "mint": "https://cdn.webshopapp.com/shops/170348/files/302961219/image.jpg",
+        "mossgreen": "https://cdn.webshopapp.com/shops/170348/files/302961507/image.jpg",
+        "mustard": "https://cdn.webshopapp.com/shops/170348/files/302968155/image.jpg",
+        "navy": "https://cdn.webshopapp.com/shops/170348/files/302968146/image.jpg",
+        "sandbrown": "https://cdn.webshopapp.com/shops/170348/files/302961222/image.jpg",
+        "willow": "https://cdn.webshopapp.com/shops/170348/files/302961234/image.jpg"
+      },
+      "little": {
+        "jefferred": "https://cdn.webshopapp.com/shops/170348/files/302966073/image.jpg",
+        "mustard": "https://cdn.webshopapp.com/shops/170348/files/302966076/image.jpg",
+        "mint": "https://cdn.webshopapp.com/shops/170348/files/306038394/image.jpg",
+        "cedargreen": "https://cdn.webshopapp.com/shops/170348/files/302967081/image.jpg",
+        "momo": "https://cdn.webshopapp.com/shops/170348/files/302966070/image.jpg",
+        "bluegrey": "https://cdn.webshopapp.com/shops/170348/files/302965998/image.jpg",
+        "white": "https://cdn.webshopapp.com/shops/170348/files/302952393/image.jpg",
+        "ivory": "https://cdn.webshopapp.com/shops/170348/files/302967069/image.jpg"
+      },
+      "limited": {
+        "charcoal": "https://cdn.webshopapp.com/shops/170348/files/302967471/image.jpg",
+        "champagne": "https://cdn.webshopapp.com/shops/170348/files/302967468/image.jpg",
+        "deepforest": "https://cdn.webshopapp.com/shops/170348/files/302967474/image.jpg",
+        "midnight": "https://cdn.webshopapp.com/shops/170348/files/302967450/image.jpg"
+      }
+    }]
+}

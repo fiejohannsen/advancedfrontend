@@ -87,44 +87,82 @@ function showSlides(n) {
 
 
 
-// FIREBASE
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCxPhhJdvEJpgb4cfVsBDOOavFlIxtzZVc",
-  authDomain: "advanced-frontend-project.firebaseapp.com",
-  databaseURL: "https://advanced-frontend-project.firebaseio.com",
-  projectId: "advanced-frontend-project",
-  storageBucket: "advanced-frontend-project.appspot.com",
-  messagingSenderId: "746928528190",
-  appId: "1:746928528190:web:9b148f1fb11021f9ffea6f"
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-const bikeRef = db.collection("bike");
-let bikes = [];
 
 
+// slider
+var frontpageSlideIndex = 1;
+showFrontPageSlides(frontpageSlideIndex);
 
-bikeRef.onSnapshot(function(snapshotData) {
-  bikes = snapshotData.docs;
-  appendBikes(bikes);
-});
+function plusFrontpageSlides(n) {
+  showFrontPageSlides(frontpageSlideIndex += n);
+}
 
-function appendBikes(bikes) {
-  let htmlTemplate = "";
-  for (let bike of bikes) {
-    console.log(bike.data());
-    htmlTemplate += `
-    <h1>CYKELMODELLER</h1>
+function currentFrontpageSlide(n) {
+  showFrontPageSlides(frontpageSlideIndex = n);
+}
 
-    <button href="#" onclick="viewModel('${i}')" class="bisou">
-      <h2>${bike.data().model}</h2>
-      <img src="${bike.data().img}">
-    </button>
-    `;
+function showFrontPageSlides(n) {
+  var i;
+  var frontpageSlides = document.getElementsByClassName("frontpageSlides");
+  var frontpageDots = document.getElementsByClassName("frontpageDot");
+  if (n > frontpageSlides.length) {
+    frontpageSlideIndex = 1
   }
-  document.querySelector('#model-container').innerHTML = htmlTemplate;
+  if (n < 1) {
+    frontpageSlideIndex = frontpageSlides.length
+  }
+  for (i = 0; i < frontpageSlides.length; i++) {
+    frontpageSlides[i].style.display = "none";
+  }
+  for (i = 0; i < frontpageDots.length; i++) {
+    frontpageDots[i].className = frontpageDots[i].className.replace(" frontpageDotActive", "");
+  }
+  frontpageSlides[frontpageSlideIndex - 1].style.display = "block";
+  frontpageDots[frontpageSlideIndex - 1].className += " frontpageDotActive";
+}
+
+
+
+const doc = document;
+let bikes;
+
+fetch('json/data.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(json => {
+    console.log(json);
+    appendBikes(json.bikes);
+  });
+
+// Adds persons to the DOM by giving parameter, persons
+function appendBikes(bikes) {
+  let htmlTemplate = '';
+  for (let bike of bikes) {
+    htmlTemplate += `
+          <a onclick="showPage('bisou')">
+            <h2>BISOU</h2>
+            <img class="bikes-img" src="${bike.bisou.bluegrey}">
+          </a>
+
+          <a onclick="showPage('cs26')">
+            <h2>CS26</h2>
+            <img class="bikes-img" src="${bike.cs26.bamboo}">
+          </a>
+
+          <a onclick="showPage('little')">
+            <h2>LITTLE</h2>
+            <img class="bikes-img" src="${bike.little.jefferred}">
+          </a>
+
+          <a onclick="showPage('limited')">
+            <h2>LIMITED</h2>
+            <img class="bikes-img" src="${bike.limited.midnight}">
+          </a>
+  `;
+
+  }
+
+  document.querySelector("#models").innerHTML = htmlTemplate;
 
 }
