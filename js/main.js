@@ -12,6 +12,7 @@ function hideAllPages() {
 // show page or tab
 function showPage(pageId) {
   hideAllPages();
+  console.log(pageId)
   document.querySelector(`#${pageId}`).style.display = "block";
 
   location.href = `#${pageId}`;
@@ -55,15 +56,27 @@ function openNav() {
 function closeNav() {
 
   document.getElementById("myNav").style.animation = "slide-out-left 1s ease-out both";
-
-
 }
 
-
+// slider on frontpage
+// let frontpageSlideIndex = 1;
+//
+// function currentFrontpageSlide(n) {
+//   slideAnimation(n)
+// }
+//
+// function plusFrontpageSlides(n) {
+//   slideAnimation(frontpageSlideIndex + n)
+// }
+//
+// function slideAnimation(newSlideIndex) {
+//   let slides = document.getElementsByClassName("frontpageSlides")
+//   let oldSlide = slides[frontpageSlideIndex];
+// }
 
 
 // slider on frontpage
-var frontpageSlideIndex = 1;
+let frontpageSlideIndex = 1;
 showFrontPageSlides(frontpageSlideIndex);
 
 function plusFrontpageSlides(n) {
@@ -75,9 +88,9 @@ function currentFrontpageSlide(n) {
 }
 
 function showFrontPageSlides(n) {
-  var i;
-  var frontpageSlides = document.getElementsByClassName("frontpageSlides");
-  var frontpageDots = document.getElementsByClassName("frontpageDot");
+  let i;
+  let frontpageSlides = document.getElementsByClassName("frontpageSlides");
+  let frontpageDots = document.getElementsByClassName("frontpageDot");
   if (n > frontpageSlides.length) {
     frontpageSlideIndex = 1
   }
@@ -96,7 +109,7 @@ function showFrontPageSlides(n) {
 
 
 // slider on bisou-page
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {

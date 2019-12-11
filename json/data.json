@@ -2,62 +2,62 @@
   "bikes": [
     {
       "bisou": {
-        "bluegrey": "../img/bisou/bisou-blue-grey.png",
-        "bluejade": "../img/bisou/bisou-blue-jade.png",
-        "ivory": "../img/bisou/bisou-ivory.png",
-        "mossgreen": "../img/bisou/bisou-moss-green.png",
-        "red": "../img/bisou/bisou-red.png",
-        "saffron": "../img/bisou/bisou-saffron.png",
-        "vincentblue": "../img/bisou/bisou-vincent-blue.png",
-        "willow": "../img/bisou/bisou-willow.png"
+        "bluegrey": "./img/bisou/bisou-blue-grey.png",
+        "bluejade": "./img/bisou/bisou-blue-jade.png",
+        "ivory": "./img/bisou/bisou-ivory.png",
+        "mossgreen": "./img/bisou/bisou-moss-green.png",
+        "red": "./img/bisou/bisou-red.png",
+        "saffron": "./img/bisou/bisou-saffron.png",
+        "vincentblue": "./img/bisou/bisou-vincent-blue.png",
+        "willow": "./img/bisou/bisou-willow.png"
       },
       "cs26": {
-        "bamboo": "../img/cs26/cs26-bamboo.png",
-        "beigered": "../img/cs26/cs26-beige-red.png",
-        "bluegrey": "../img/cs26/cs26-blue-grey.png",
-        "ivory": "../img/cs26/cs26-ivory.png",
-        "jefferred": "../img/cs26/cs26-jeffer-red.png",
-        "mint": "../img/cs26/cs26-mint.png",
-        "mossgreen": "../img/cs26/cs26-moss-green.png",
-        "mustard": "../img/cs26/cs26-mustard.png",
-        "navy": "../img/cs26/cs26-navy.png",
-        "sandbrown": "../img/cs26/cs26-sand-brown.png",
-        "willow": "../img/cs26/cs26-willow.png"
+        "bamboo": "./img/cs26/cs26-bamboo.png",
+        "beigered": "./img/cs26/cs26-beige-red.png",
+        "bluegrey": "./img/cs26/cs26-blue-grey.png",
+        "ivory": "./img/cs26/cs26-ivory.png",
+        "jefferred": "./img/cs26/cs26-jeffer-red.png",
+        "mint": "./img/cs26/cs26-mint.png",
+        "mossgreen": "./img/cs26/cs26-moss-green.png",
+        "mustard": "./img/cs26/cs26-mustard.png",
+        "navy": "./img/cs26/cs26-navy.png",
+        "sandbrown": "./img/cs26/cs26-sand-brown.png",
+        "willow": "./img/cs26/cs26-willow.png"
       },
       "little": {
-        "jefferred": "../img/little/little-jeffer-red.png",
-        "mustard": "../img/little/little-mustard.png",
-        "mint": "../img/little/little-mint.png",
-        "cedargreen": "../img/little/little-cedar-green.png",
-        "momo": "../img/little/little-momo.png",
-        "bluegrey": "../img/little/little-blue-grey.png",
-        "white": "../img/little/little-white.png",
-        "ivory": "../img/little/little-ivory.png"
+        "jefferred": "./img/little/little-jeffer-red.png",
+        "mustard": "./img/little/little-mustard.png",
+        "mint": "./img/little/little-mint.png",
+        "cedargreen": "./img/little/little-cedar-green.png",
+        "momo": "./img/little/little-momo.png",
+        "bluegrey": "./img/little/little-blue-grey.png",
+        "white": "./img/little/little-white.png",
+        "ivory": "./img/little/little-ivory.png"
       },
       "limited": {
-        "charcoal": "../img/limited/limited-charcoal.png",
-        "champagne": "../img/limited/limited-champagne.png",
-        "deepforest": "../img/limited/limited-deep-forest.png",
-        "midnight": "../img/limited/limited-midnight.png"
+        "charcoal": "./img/limited/limited-charcoal.png",
+        "champagne": "./img/limited/limited-champagne.png",
+        "deepforest": "./img/limited/limited-deep-forest.png",
+        "midnight": "./img/limited/limited-midnight.png"
       },
       "minivelo": {
-        "mattbeigered": "../img/minivelo/mini-velo-matt-beige-red.png",
-        "mattbluegrey": "../img/minivelo/mini-velo-matt-blue-grey.png",
-        "mattivory": "../img/minivelo/mini-velo-matt-ivory.png",
-        "mattnavy": "../img/minivelo/mini-velo-matt-navy.png",
-        "mattsage": "../img/minivelo/mini-velo-matt-sage.png",
-        "mattwillow": "../img/minivelo/mini-velo-matt-willow.png"
+        "mattbeigered": "./img/minivelo/mini-velo-matt-beige-red.png",
+        "mattbluegrey": "./img/minivelo/mini-velo-matt-blue-grey.png",
+        "mattivory": "./img/minivelo/mini-velo-matt-ivory.png",
+        "mattnavy": "./img/minivelo/mini-velo-matt-navy.png",
+        "mattsage": "./img/minivelo/mini-velo-matt-sage.png",
+        "mattwillow": "./img/minivelo/mini-velo-matt-willow.png"
       },
       "singlespeed": {
-        "deepforest": "../img/singlespeed/single-speed-deep-forest.png",
-        "mattcharcoal": "../img/singlespeed/single-speed-matt-charcoal.png",
-        "midnight": "../img/singlespeed/single-speed-midnight.png"
+        "deepforest": "./img/singlespeed/single-speed-deep-forest.png",
+        "mattcharcoal": "./img/singlespeed/single-speed-matt-charcoal.png",
+        "midnight": "./img/singlespeed/single-speed-midnight.png"
 
       },
       "sport": {
-        "mattmochabrown": "../img/sport/sport-matt-mocha-brown.png",
-        "mattolive": "../img/sport/sport-matt-olive.png",
-        "mattblack": "../img/sport/sport-matt-black.png"
+        "mattmochabrown": "./img/sport/sport-matt-mocha-brown.png",
+        "mattolive": "./img/sport/sport-matt-olive.png",
+        "mattblack": "./img/sport/sport-matt-black.png"
       }
     }]
 }

@@ -10,7 +10,7 @@
     "contacttitle": "KONTAKT",
     "email": "FIXFINITO@OUTLOOK.DK",
     "phone": "+45 53 78 68 78",
-    "location": "../img/fixfinitomap.png"
+    "location": "./img/fixfinitomap.png"
   }
 ]
 }
