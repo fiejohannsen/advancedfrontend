@@ -19,12 +19,13 @@
   <div id="body-wrapper">
     <!-- tabbar navigation -->
     <header>
-      <a class="logo" onclick="showPage('home')" href="#home"><img src="img/fixfinitologo.svg" alt="">
-      </a>
+
 
       <span class="burgermenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
       <img class="shoppingbasket" src="img/shoppingbasket.svg" alt="">
       <span id="notification"></span>
+      <a class="logo" onclick="showPage('home')" href="#home"><img src="img/fixfinitologo.svg" alt="">
+      </a>
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -55,6 +56,15 @@
 
       <div class="bikemodel-slider show-on-scroll">
         <h1>CYKELMODELLER</h1>
+        <div class="dot-container-desktop">
+          <span class="frontpageDot" onclick="currentFrontpageSlide(1)">BISOU</span>
+          <span class="frontpageDot" onclick="currentFrontpageSlide(2)">CS26</span>
+          <span class="frontpageDot" onclick="currentFrontpageSlide(3)">LIMITED</span>
+          <span class="frontpageDot" onclick="currentFrontpageSlide(4)">LITTLE</span>
+          <span class="frontpageDot" onclick="currentFrontpageSlide(5)">MINI VELO</span>
+          <span class="frontpageDot" onclick="currentFrontpageSlide(6)">SINGLE SPEED</span>
+          <span class="frontpageDot" onclick="currentFrontpageSlide(7)">SPORT</span>
+        </div>
         <div class="frontpage-slideshow-container">
 
           <div class="frontpageSlides" onclick="showPage('bisou')">
@@ -105,15 +115,7 @@
           <span class="frontpageDot" onclick="currentFrontpageSlide(6)"></span>
           <span class="frontpageDot" onclick="currentFrontpageSlide(7)"></span>
         </div>
-        <div class="dot-container-desktop">
-          <span class="desktopModelsMenu" onclick="currentFrontpageSlide(1)">BISOU</span>
-          <span class="desktopModelsMenu" onclick="currentFrontpageSlide(2)">CS26</span>
-          <span class="desktopModelsMenu" onclick="currentFrontpageSlide(3)">LIMITED</span>
-          <span class="desktopModelsMenu" onclick="currentFrontpageSlide(4)">LITTLE</span>
-          <span class="desktopModelsMenu" onclick="currentFrontpageSlide(5)">MINI VELO</span>
-          <span class="desktopModelsMenu" onclick="currentFrontpageSlide(6)">SINGLE SPEED</span>
-          <span class="desktopModelsMenu" onclick="currentFrontpageSlide(7)">SPORT</span>
-        </div>
+
 
 
         <a class="show-all-btn" onclick="showPage('cykelmodeller')" href="#cykelmodeller">VIS ALLE MODELLER</a>

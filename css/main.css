@@ -62,8 +62,8 @@ header {
   }
 
   100% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-2000px);
+    transform: translateX(-2000px);
     opacity: 0;
   }
 }
@@ -76,8 +76,8 @@ header {
   }
 
   100% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-2000px);
+    transform: translateX(-2000px);
     opacity: 0;
   }
 }
@@ -210,7 +210,6 @@ header {
   animation: fade-in 2s ease-out both;
   opacity: 1;
 }
-
 
 #models, #extras {
   margin-bottom: 10%;
@@ -678,8 +677,48 @@ header {
     width: 90%;
   }
 
-  .show-all-btn {
+  .about-content>p {
     width: 60%;
+    margin: 0 auto;
+  }
+
+  .slideshow-container, .frontpage-slideshow-container {
+    max-width: 58%;
+  }
+
+  .bikemodel-slider>h1 {
+    padding-bottom: 1.5%;
+  }
+
+  .frontpageSlides>h2 {
+    display: none;
+  }
+
+  .show-all-btn {
+    width: 30%;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 1%;
+  }
+
+  .dot-container-mobile {
+    display: none;
+  }
+
+  .dot-container-desktop {
+    display: block;
+  }
+
+  .frontpageDot {
+    background-color: transparent;
+    width: auto;
+    margin: 0 15px;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .frontpageDotActive {
+    font-weight: 700;
   }
 
   #models {

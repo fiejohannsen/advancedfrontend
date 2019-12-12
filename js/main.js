@@ -48,7 +48,6 @@ setDefaultPage();
 // nav (burgermenu)
 function openNav() {
   document.getElementById("myNav").style.animation = "slide-in-left 0.8s ease-out both";
-  document.getElementById("myNav").style.opacity = "1";
   document.getElementById("myNav").style.display = "block";
 
 }
