@@ -174,8 +174,6 @@ header {
   z-index: 1;
   min-height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
 }
 
 /* ---------- forside styling ---------- */
@@ -475,8 +473,6 @@ header {
 
 /* ---------- footer styling ---------- */
 #footercontent {
-  position: absolute;
-  bottom: 0;
   height: auto;
   background: #DBDBDB;
 }
@@ -611,6 +607,10 @@ header {
 }
 
 @media screen and (min-width: 600px) {
+  header {
+    height: 6vh;
+  }
+
   .mobile-front-img {
     display: none;
   }
@@ -633,8 +633,31 @@ header {
     padding-top: 5%;
   }
 
+  #models, #extras {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #models>div, #extras>div {
+    width: 40%;
+  }
+
+  #models>div, #extras>div {
+    padding-top: 1%;
+  }
+
+  .bikes-img {
+    width: 95%;
+  }
+
   #cykelmodeller, #ekstraudstyr {
     padding-top: 15%;
+  }
+
+  #cykelmodeller>h1 {
+    margin-top: 2%;
   }
 
   #bisou {
@@ -672,6 +695,10 @@ header {
 }
 
 @media screen and (min-width: 992px) {
+  header {
+    height: 8vh;
+  }
+
   .desktop-front-img {
     padding-top: 0;
     height: auto;
@@ -722,14 +749,7 @@ header {
     font-weight: 700;
   }
 
-  #models {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #models>div {
+  #models>div, #extras>div {
     width: 30%;
   }
 
@@ -739,6 +759,10 @@ header {
 
   #cykelmodeller, #ekstraudstyr, #bisou {
     padding-top: 7%;
+  }
+
+  #models>div, #extras>div {
+    padding-top: 1%;
   }
 
   .bisou-slider {
