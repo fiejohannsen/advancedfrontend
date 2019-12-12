@@ -503,6 +503,22 @@ footer {
 
 }
 
+.marker {
+background-image: url('location.png');
+background-size: cover;
+width: 25px;
+height: 25px;
+cursor: pointer;
+}
+
+.mapboxgl-popup {
+max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+text-align: center;
+}
+
 /* ---------- animations ---------- */
 @-webkit-keyframes slide-in-top {
   0% {
