@@ -6,7 +6,7 @@
   <title>SINGLE PAGE WEB APP TEMPLATE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="css/main.css">
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
@@ -16,10 +16,7 @@
 </head>
 
 <body>
-  <!-- tabbar navigation -->
   <header>
-
-
     <span class="burgermenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <img class="shoppingbasket" src="img/shoppingbasket.svg" alt="">
     <span id="notification"></span>
@@ -40,7 +37,6 @@
 
 
   <!-- pages -->
-  <!-- home page -->
   <section id="home" class="page">
     <img class="mobile-front-img" src="img/mobile-bg.png" alt="">
     <img class="desktop-front-img" src="img/desktop-bg.png" alt="">
@@ -115,41 +111,27 @@
         <span class="frontpageDot" onclick="currentFrontpageSlide(7)"></span>
       </div>
 
-
-
       <a class="show-all-btn" onclick="showPage('cykelmodeller')" href="#cykelmodeller">VIS ALLE MODELLER</a>
-
     </div>
-
-
-
-
   </section>
 
-  <!-- about page -->
   <section id="cykelmodeller" class="page">
     <a class="returnBtn" href="#home" onclick="showPage('home')">&#8592; TILBAGE</a>
-
     <h1>CYKELMODELLER</h1>
-
     <div id="modelsWrapper">
       <div id="models"></div>
     </div>
-
-
-
   </section>
 
   <section id="bisou" class="page">
     <a class="returnBtn" href="#cykelmodeller" onclick="showPage('cykelmodeller')">&#8592; TILBAGE</a>
-
     <div class="bisou-slider">
       <h1>BISOU</h1>
 
       <div class="slideshow-container">
 
         <div class="mySlides">
-          <img src="img/bisou/bisou-blue-grey.png" style="width:80%">
+          <img class="animationOnClick" src="img/bisou/bisou-blue-grey.png" style="width:80%">
         </div>
 
         <div class="mySlides">
@@ -213,14 +195,8 @@
         </article>
       </div>
     </div>
-
-
-
   </section>
 
-
-
-  <!-- clients page -->
   <section id="ekstraudstyr" class="page">
     <h1>EKSTRAUDSTYR</h1>
 
@@ -250,12 +226,8 @@
         <img class="bikes-img" src="img/grips.png" alt="">
       </div>
     </div>
-
-
   </section>
 
-
-  <!-- contact page -->
   <section id="brugtecykler" class="page">
     <header class="topbar">
       <h2>BRUGTE CYKLER</h2>
@@ -278,10 +250,6 @@
     <div id="footercontent"></div>
     <div id="map"></div>
   </footer>
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-firestore.js"></script>
 
   <!-- main js file -->
   <script src="js/main.js"></script>

@@ -113,6 +113,7 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
+
 }
 
 function currentSlide(n) {
@@ -131,6 +132,7 @@ function showSlides(n) {
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
@@ -288,7 +290,7 @@ function isElementInViewport(el) {
 
 
 
-// We tried making a mapbox, but it failed to load in footer on each page and would only show up once. Maybe because it has an id (container: 'map'), that we can't change?
+// Mapbox
 mapboxgl.accessToken = "pk.eyJ1IjoibGFlcmtlbGFuZ2UiLCJhIjoiY2p0aWJwbTVjMGpuMTN5bno5eXI2OHZ6cCJ9.M1Fc8ANdg2nEM6YOtvH1_g";
 
 
@@ -299,7 +301,6 @@ let map = new mapboxgl.Map({
   center: [10.2153, 56.1634]
 });
 
-// code from the next step will go here!
 let geojson = {
   type: 'FeatureCollection',
   features: [{
