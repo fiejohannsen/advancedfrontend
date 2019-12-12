@@ -476,7 +476,8 @@ header {
 /* ---------- footer styling ---------- */
 #footercontent {
   position: absolute;
-  height: 300px;
+  bottom: 0;
+  height: auto;
   background: #DBDBDB;
 }
 
