@@ -8,6 +8,44 @@ html {
   font-weight: 200;
 }
 
+/* ---------- loader styling ---------- */
+#loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+  overflow: hidden;
+  background: var(--loader-background-color);
+  text-align: center;
+}
+
+.spinner {
+  border: 5px solid black;
+  border-radius: 50%;
+  border-top: 5px solid black;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1s linear infinite;
+  /* Safari */
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+
 p {
   margin-block-end: 0;
   letter-spacing: 2px;
@@ -149,7 +187,6 @@ header {
   display: none;
   animation: fadeIn 0.4s;
   z-index: 1;
-  min-height: 100%;
   width: 100%;
 }
 
@@ -227,6 +264,7 @@ header {
   background-color: white;
   z-index: 1;
   letter-spacing: 2px;
+  font-size: 10px;
 }
 
 .bikemodel-slider {
@@ -850,6 +888,13 @@ footer {
     margin: 0 3% 0 0;
   }
 
+  .dot-container-models>.modelDot {
+    width: auto;
+    margin: 0 15px;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
   #add-to-basket {
     width: 100%;
   }
@@ -873,6 +918,10 @@ footer {
 
   .specification>article {
     margin: 0 3%;
+  }
+
+  .specification>article>h2 {
+    padding-top: 0%;
   }
 
   footer {

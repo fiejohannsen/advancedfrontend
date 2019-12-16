@@ -334,3 +334,12 @@ geojson.features.forEach(function(marker) {
       .setHTML('<h3><b>' + marker.properties.title + '</b></h3><p>' + marker.properties.description + '</p>'))
     .addTo(map);
 });
+
+function showLoader(show) {
+  let loader = document.querySelector('#loader');
+  if (show) {
+    loader.classList.remove("hide");
+  } else {
+    loader.classList.add("hide");
+  }
+}
