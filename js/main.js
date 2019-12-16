@@ -18,7 +18,10 @@ function showPage(pageId) {
   location.href = `#${pageId}`;
   document.getElementById("myNav").style.display = "none";
 
+
 }
+
+
 
 // sets active tabbar/ menu item
 function setActiveTab(pageId) {
@@ -33,6 +36,16 @@ function setActiveTab(pageId) {
   }
 
 }
+
+function showLoader(show) {
+  let loader = document.querySelector('#loader');
+  if (show) {
+    loader.classList.remove("hide");
+  } else {
+    loader.classList.add("hide");
+  }
+}
+
 
 // set default page
 function setDefaultPage() {
@@ -334,12 +347,3 @@ geojson.features.forEach(function(marker) {
       .setHTML('<h3><b>' + marker.properties.title + '</b></h3><p>' + marker.properties.description + '</p>'))
     .addTo(map);
 });
-
-function showLoader(show) {
-  let loader = document.querySelector('#loader');
-  if (show) {
-    loader.classList.remove("hide");
-  } else {
-    loader.classList.add("hide");
-  }
-}
