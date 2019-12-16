@@ -16,14 +16,14 @@
 </head>
 
 <body>
-  <header class="hide">
+  <header>
     <span class="burgermenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <img class="shoppingbasket" src="img/shoppingbasket.svg" alt="">
     <span id="notification"></span>
     <a class="logo" onclick="showPage('home')" href="#home"><img src="img/fixfinitologo.svg" alt="">
     </a>
     <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
         <a class="show-on-scroll" onclick="showPage('home')" href="#home">HJEM</a>
         <a class="show-on-scroll" onclick="showPage('cykelmodeller')" href="#cykelmodeller">CYKELMODELLER</a>
@@ -116,7 +116,7 @@
   </section>
 
   <section id="cykelmodeller" class="page">
-    <a class="returnBtn" href="#home" onclick="showPage('home')">&#8592; TILBAGE</a>
+    <a class="return-btn" href="#home" onclick="showPage('home')">&#8592; TILBAGE</a>
     <h1>CYKELMODELLER</h1>
     <div id="modelsWrapper">
       <div id="models"></div>
@@ -124,7 +124,7 @@
   </section>
 
   <section id="bisou" class="page">
-    <a class="returnBtn" href="#cykelmodeller" onclick="showPage('cykelmodeller')">&#8592; TILBAGE</a>
+    <a class="return-btn" href="#cykelmodeller" onclick="showPage('cykelmodeller')">&#8592; TILBAGE</a>
     <div class="bisou-slider">
       <div class="dot-container-models">
         <span class="modelDot"><b>BISOU</b></span>
@@ -263,6 +263,9 @@
   </div>
   <!-- main js file -->
   <script src="js/main.js"></script>
+  <script src="js/jsonfetch.js"></script>
+  <script src="js/mapboxfetch.js"></script>
+
 </body>
 
 </html>

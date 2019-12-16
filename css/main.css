@@ -17,14 +17,14 @@ html {
   height: 100%;
   z-index: 9999999999;
   overflow: hidden;
-  background: var(--loader-background-color);
+  background: white;
   text-align: center;
 }
 
 .spinner {
   border: 5px solid black;
   border-radius: 50%;
-  border-top: 5px solid black;
+  border-top: 5px solid #f4f4f4;
   width: 50px;
   height: 50px;
   -webkit-animation: spin 1s linear infinite;
@@ -42,8 +42,8 @@ html {
 
 .hide {
   visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 0.4s, opacity 0.4s linear;
+  opacity: 0.8;
+  transition: visibility 1s 1s, opacity 0.5s linear;
 }
 
 @keyframes spin {
@@ -184,7 +184,7 @@ header {
   color: #707070;
 }
 
-.overlay .closebtn {
+.overlay .close-btn {
   position: absolute;
   top: -1%;
   left: 1%;
@@ -252,7 +252,7 @@ header {
   background-color: white;
 }
 
-#cykelmodeller>.returnBtn {
+#cykelmodeller>.return-btn {
   background-color: #F4F4F4;
 }
 
@@ -265,7 +265,7 @@ header {
   padding-top: 20%;
 }
 
-.returnBtn {
+.return-btn {
   text-decoration: none;
   color: black;
   position: fixed;
