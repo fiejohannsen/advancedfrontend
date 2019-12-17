@@ -1,6 +1,5 @@
 /* ---------- general styling ---------- */
 html {
-  color: var(--text-color-dark);
   font-family: 'Roboto', sans-serif;
   height: 100%;
   text-align: center;
