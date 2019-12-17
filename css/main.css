@@ -43,7 +43,7 @@ html {
 .hide {
   visibility: hidden;
   opacity: 0.8;
-  transition: visibility 1s 1s, opacity 0.5s linear;
+  transition: visibility 1s 0.5s, opacity 0.5s linear;
 }
 
 @keyframes spin {
@@ -88,11 +88,6 @@ body {
   min-height: 100%;
   margin-bottom: -330px;
   position: relative;
-}
-
-.notActive {
-  -webkit-animation: slide-out-right 1s ease-out both;
-  animation: slide-out-right 1s ease-out both;
 }
 
 header {
@@ -277,6 +272,10 @@ header {
   font-size: 10px;
 }
 
+.dot-container-models {
+  display: none;
+}
+
 .bikemodel-slider {
   height: auto;
   display: flex;
@@ -293,7 +292,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10% 0;
+  padding: 0% 0% 10% 0%;
 }
 
 .bikemodel-slider.is-visible {
@@ -545,34 +544,6 @@ footer {
 }
 
 /* ---------- animations ---------- */
-@-webkit-keyframes slide-out-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 1;
-  }
-}
-
-@keyframes slide-out-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes slide-out-left {
   0% {
     -webkit-transform: translateX(0);
@@ -688,34 +659,7 @@ footer {
   }
 }
 
-@-webkit-keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(1000px);
-    transform: translateY(1000px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(1000px);
-    transform: translateY(1000px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
+/* mediaqueries for tablet */
 @media screen and (min-width: 600px) {
   header {
     height: 6vh;
@@ -737,6 +681,17 @@ footer {
 
   .bisou-slider, .bikemodel-slider {
     padding: 5% 0;
+  }
+
+  .dot-container-models {
+    display: block;
+  }
+
+  .dot-container-models>.modelDot {
+    width: auto;
+    margin: 0 15px;
+    font-size: 12px;
+    letter-spacing: 3px;
   }
 
   #models>div>h2, #ekstraudstyr>div>h2 {
@@ -774,6 +729,10 @@ footer {
     padding-top: 12%;
   }
 
+  .bisou-h2 {
+    display: none;
+  }
+
   .prev {
     left: 1%;
   }
@@ -794,7 +753,6 @@ footer {
   #footercontent {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     padding-top: 3%;
   }
@@ -809,6 +767,7 @@ footer {
   }
 }
 
+/* mediaqueries for desktop */
 @media screen and (min-width: 992px) {
   header {
     height: 8vh;
@@ -896,13 +855,6 @@ footer {
     width: 20%;
     align-items: flex-end;
     margin: 0 3% 0 0;
-  }
-
-  .dot-container-models>.modelDot {
-    width: auto;
-    margin: 0 15px;
-    font-size: 12px;
-    letter-spacing: 3px;
   }
 
   #add-to-basket {
